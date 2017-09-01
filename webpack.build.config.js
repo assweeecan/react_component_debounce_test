@@ -14,7 +14,7 @@ module.exports = function (env = defaultEnv) {
   return {
     // 入口文件
     entry: {
-      commons: ['babel-polyfill', 'matchmedia-polyfill', 'moment', 'classnames', 'history',
+      commons: ['moment', 'classnames', 'history',
         'react', 'react-dom', 'react-redux', 'react-router', 'react-router-dom', 'react-router-redux', 'prop-types',
         'redux', 'redux-thunk', 'should-update', 'urijs', 'qs'],
       index: path.resolve(ROOT_PATH, 'app/scripts/index.jsx'),
@@ -35,7 +35,7 @@ module.exports = function (env = defaultEnv) {
       historyApiFallback: true,
       host: '0.0.0.0',
       compress: true,
-      port: 8330,
+      port: 8081,
       hot: false,
       inline: true,
       publicPath: '/',
@@ -95,27 +95,7 @@ module.exports = function (env = defaultEnv) {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: [
-            {
-              loader: 'babel-loader',
-              query: {
-                presets: [
-                  [
-                    'es2015',
-                    {
-                      modules: false,
-                    },
-                  ],
-                  'es2016',
-                  'es2017',
-                  'stage-2',
-                  'react',
-                ],
-                plugins: [['import', {
-                  libraryName: 'antd',
-                  style: true,
-                }]],
-              },
-            },
+            'babel-loader',
             // 'eslint-loader',
           ],
         },

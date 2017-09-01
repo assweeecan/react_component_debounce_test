@@ -18,6 +18,14 @@
   ],
   "plugins": [
     "transform-runtime",
-    "istanbul"
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+        // or 'css'
+      }
+    ],
+    "transform-decorators-legacy"
   ]
 }

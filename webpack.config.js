@@ -32,7 +32,7 @@ module.exports = function (env = defaultEnv) {
       historyApiFallback: true,
       host: '0.0.0.0',
       compress: true,
-      port: 8330,
+      port: 8081,
       hot: false,
       inline: true,
       publicPath: '/',
@@ -92,24 +92,7 @@ module.exports = function (env = defaultEnv) {
           test: /\.jsx?$/,
           exclude: /node_modules/,
           use: [
-            {
-              loader: 'babel-loader',
-              query: {
-                presets: [
-                  // [
-                  //   'es2015',
-                  //   {
-                  //     modules: false,
-                  //   },
-                  // ],
-                  'es2016',
-                  'es2017',
-                  'stage-2',
-                  'react',
-                ],
-                plugins: [],
-              },
-            },
+            'babel-loader',
             // 'eslint-loader',
           ],
         },
