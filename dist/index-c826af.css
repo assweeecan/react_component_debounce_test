@@ -552,9 +552,9 @@ samp {
 }
 @font-face {
   font-family: 'anticon';
-  src: url(/antd_performance_test/dist/iconfont.eot);
+  src: url(./iconfont.eot);
   /* IE9*/
-  src: url(/antd_performance_test/dist/iconfont.eot?#iefix) format('embedded-opentype'),  url(/antd_performance_test/dist/iconfont.woff) format('woff'),  url(/antd_performance_test/dist/iconfont.ttf) format('truetype'),  url(/antd_performance_test/dist/iconfont.svg#iconfont) format('svg');
+  src: url(./iconfont.eot?#iefix) format('embedded-opentype'),  url(./iconfont.woff) format('woff'),  url(./iconfont.ttf) format('truetype'),  url(./iconfont.svg#iconfont) format('svg');
 }
 .anticon {
   display: inline-block;
@@ -9108,4 +9108,4 @@ body,
   transition: unset;
 }
 
-/*# sourceMappingURL=index-63ac90.css.map*/
+/*# sourceMappingURL=index-c826af.css.map*/

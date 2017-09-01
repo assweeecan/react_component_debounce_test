@@ -9,8 +9,8 @@ import * as actions from '../actions/form-update-optimized-page';
 import CityCheckboxGroup from '../components/form-update-optimized-page/city-checkbox-group';
 import showLifeStyle from '../components/commons/show-react-lifecycle';
 
-const Input = showLifeStyle()(reactComponentDebounce(500)(_input));
-const CheckboxGroup = showLifeStyle()(reactComponentDebounce(500)(Checkbox.Group));
+const Input = showLifeStyle('', 'Input', '')(reactComponentDebounce(500)(_input));
+const CheckboxGroup = showLifeStyle('', 'CheckboxGroup', '')(reactComponentDebounce(500)(Checkbox.Group));
 
 const FormItem = Form.Item;
 

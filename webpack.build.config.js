@@ -24,7 +24,7 @@ module.exports = function (env = defaultEnv) {
     output: {
       path: path.join(ROOT_PATH, 'dist'),
       filename: env.noNeedHash ? '[name].js' : '[name]-[chunkhash:6].js',
-      publicPath: '/antd_performance_test/dist/',
+      publicPath: './',
     },
 
     // 开启source-map

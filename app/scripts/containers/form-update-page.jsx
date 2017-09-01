@@ -8,8 +8,8 @@ import * as actions from '../actions/form-update-page';
 import CityCheckboxGroup from '../components/form-update-page/city-checkbox-group';
 import showLifeStyle from '../components/commons/show-react-lifecycle';
 
-const Input = showLifeStyle()(_input);
-const CheckboxGroup = showLifeStyle()(Checkbox.Group);
+const Input = showLifeStyle('', 'Input', '')(_input);
+const CheckboxGroup = showLifeStyle('', 'CheckboxGroup', '')(Checkbox.Group);
 
 const FormItem = Form.Item;
 
