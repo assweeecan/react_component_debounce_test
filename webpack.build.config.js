@@ -16,7 +16,7 @@ module.exports = function (env = defaultEnv) {
     entry: {
       commons: ['moment', 'classnames', 'history',
         'react', 'react-dom', 'react-redux', 'react-router', 'react-router-dom', 'react-router-redux', 'prop-types',
-        'redux', 'redux-thunk', 'should-update', 'urijs', 'qs'],
+        'redux', 'redux-thunk', 'should-update', 'qs'],
       index: path.resolve(ROOT_PATH, 'app/scripts/index.jsx'),
     },
 

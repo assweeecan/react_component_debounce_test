@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --progress",
     "buildstart": "webpack-dev-server --progress  --config webpack.build.config.js",
-    "build": "del /Q .\\build & rm -rf ./build & webpack --progress --config webpack.build.config.js"
+    "build": "del /Q /s .\\dist & rm -rf ./dist & webpack --progress --config webpack.build.config.js"
   },
   "author": "",
   "license": "ISC",
